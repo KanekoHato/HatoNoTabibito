@@ -125,7 +125,7 @@ label introduce:
     show hato standby at center
     na "After A Few Moments .........."
     ka "Thats my story !!"
-    ka "My past is intresting right so \n what do you want to know about me?"
+    ka "My past is intresting right so\nwhat do you want to know about me?"
     ka "Wait a moment , let me change my clothes"
     "......."
     ".........."
@@ -157,7 +157,7 @@ label introduce:
     ka "Oh i see okay after i came to this world i transformed into a pigeon that resemble hooman girl"
     ka "And after i learn hooman culture and learn so advance things with my magic"
     ka "I became a what that you guys called a programmer, and thats it , because i felt bored"
-    ka "And i need more new friends , new connecion i be came VTuber A Pigeon VTuber\n that came from another world!!!"
+    ka "And i need more new friends , new connecion and i be came VTuber ! A Pigeon VTuber\nthat came from another world!!!"
     pname "Thats cool and such but what is your future goal [ka]? Became a hero ?! Demon slayer ?!"
     ka "I want my subjecs and citizen to enjoy me more and make everyone happy and befirends everyone !!!"
     pname "Woah thats a cool goal !!! what about the content?!"
@@ -169,7 +169,7 @@ label introduce:
         ka "Do you still want to know about my age  ?"
         "Yes":
             $askage = True
-            pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,Wangi Wangi WANGI!!HUM WANGI !!"
+            pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,\nWANGI Wangi Wangi WANGI!!HUM WANGI !!"
             jump police
 
         "No":
@@ -181,6 +181,8 @@ label safe:
     ka "Well it doesnt matter anyway im already 20 on hooman age, but when in pigeon age im still 16"
     pname "Oh thats intresting"
     ka "I think i will also make some movie time together with my viewers !"
+    pname "And so what is your hobby?"
+    ka "My hobby? Of Course i like eating , gaming , reading book, travelling around the world and many other things !!"
     "*Clock is showing 21:00 PM*"
     ka "Wow i cant believe time is passing so fast!"
     pname "Ah i think its time for me to go home"
@@ -267,14 +269,6 @@ label end:
     stop sound
     stop music fadeout 1.0
     return
-
-
-
-
-
-
-
-
 
 
 
