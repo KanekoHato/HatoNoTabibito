@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    menu:
+File "game/script.rpy", line 212: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    na "Suddenly Theres a laser in [pname]  forehead"
     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Nov 03 18:19:33 2020
+Wed Nov 04 15:31:20 2020

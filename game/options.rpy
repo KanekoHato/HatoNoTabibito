@@ -18,18 +18,77 @@ define config.name = _("KanekoIntroVn")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.2b"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Thanks to all of this people that contribute on this project :\n
+    Ethel Chamomile\n
+    Battle Programmer\n
+    Tanz Dev\n
+    SaberXG\n
+    Yukikaze Ch\n
+    Ced\n
+    NinjaNub\n
+    CraigSamaChamaChan\n
+    Gooze\n
+    4Damn\n
+    Wakasigihime\n
+    Kiya Akiyama\n
+    Eggseo\n
+    Miyuki Akumochi (Miyako)\n
+    All Of My Stream Viewers\n
+    Tim Slee\n
+    That i put on the code for testing purposes\n
+    Squabbers Member\n
+    BlackWings Members\n
+    All of my slave :p\n
+
+Music :\n
+
+Track Info:\n
+2.1m/s - "Effloresce" By Tanz Dev\n
+https://www.youtube.com/watch?v=ovCXwiEh8Yc\n
+Music : TanzDev\n
+Vocal : Milky/Maple\n
+Lyric : TanzDev, ER_0R\n
+Visual : TanzDev\n
+
+
+New Beginning by Del. https://soundcloud.com/del-sound\n
+Free Download / Stream: http://bit.ly/2BWN4nA\n
+Music promoted by Audio Library https://youtu.be/akemmRPuRa8\n
+
+
+Track Info:\n
+Title: New Beginning by Del\n
+Genre and Mood: Dance & Electronic · Bright\n
+
+Forward by Declan DP Music https://soundcloud.com/declandp\n
+Licensing Agreement: http://www.declandp.info/music-licensing\n
+Free Download / Stream: http://bit.ly/2BwdHQ3\n
+Music promoted by Audio Library https://youtu.be/ET9zvLo87mY\n
+
+Track Info:\n
+Title: Forward by Declan DP\n
+Genre and Mood: Dance & Electronic · Bright\n
+
+War Drums\n
+Music: Alec Koff\n
+Video: Creative Commons Attribution License,\n
+Pexels / Licensed Videos, Envato Elements\n
+
+
+Creative Commons ? Attribution 3.0 Unported ? CC BY 3.0 \n
+https://creativecommons.org/licenses/by/3.0/\n
 """)
 
 
