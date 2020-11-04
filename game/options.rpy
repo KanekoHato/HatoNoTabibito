@@ -47,6 +47,7 @@ Thanks to all of this people that contribute on this project :\n
     Miyuki Akumochi (Miyako)\n
     All Of My Stream Viewers\n
     Tim Slee\n
+    Haris\n
     That i put on the code for testing purposes\n
     Squabbers Member\n
     BlackWings Members\n
@@ -86,6 +87,8 @@ Music: Alec Koff\n
 Video: Creative Commons Attribution License,\n
 Pexels / Licensed Videos, Envato Elements\n
 
+Fesliyan Studios music https://www.fesliyanstudios.com
+Creepy Vibes-39688
 
 Creative Commons ? Attribution 3.0 Unported ? CC BY 3.0 \n
 https://creativecommons.org/licenses/by/3.0/\n
