@@ -31,8 +31,8 @@ define config.version = "1.2c"
 
 define gui.about = _p("""
 Thanks to all of this people that contribute on this project :\n
-    Ethel Chamomile\n
-    Battle Programmer\n
+    Ethel Chamomile (Hoodie, Iris Design)\n
+    Battle Programmer (Jeans, Shoes Design)\n
     Tanz Dev\n
     SaberXG\n
     Yukikaze Ch\n
