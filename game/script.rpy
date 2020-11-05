@@ -12,11 +12,16 @@ define audio.flaps = "audio/wingsflap.mp3"
 define audio.zapped = "audio/zapped.mp3"
 define audio.story = "audio/storytime.ogg"
 define audio.horror = "audio/horror.ogg"
-define skiphistory = "None"
+#define skiphistory = "None"
 define splash = "images/splash.png"
 define audio.bell = "audio/bells.ogg"
 define audio.doors = "audio/doors.ogg"
 define audio.stabs = "audio/stabs.ogg"
+transform shock_zoom:
+    zoom 5
+    yalign 0
+    xalign 0
+
 
 
 # The game starts here.
@@ -209,9 +214,9 @@ label introduce:
     ka "Thanks!! , Ill remember that !!!"
     pname "So.....Tell me, what is your favourite food ?"
     ka "My favourite food is rendang & Pizza !!"
-    ka "Its a meaty food made from beef meat or chicken ~"
-    ka "You should make it by  yourself like Battle Programmer does"
-    ka "Or you can just buy it from your store !!!"
+    ka "Rendang Is a meaty food made from beef meat or chicken"
+    ka "You could make it by  yourself or just buy it"
+    #ka "Or you can just buy it from your store !!!"
     #ka "Also you could mix rendang with jackfruit condement"
     #ka "So the summary is rendang taste is like a beef meat mixed with"
     #ka "many spices and cooked with the spices untill the spices absorbed by the meat"
@@ -227,7 +232,7 @@ label introduce:
     ka "I want my subjecs and citizen to enjoy me more and make everyone happy and befirends everyone !!!"
     pname "Woah thats a cool goal !!! what about the content?!"
     ka "For now i want to make a inspirative content , educational, gaming content because hooman likes that\nalso maybe music content in the future"
-    pname "What is your name?"
+    pname "What is your age?"
     ka "Really isnt it rude in hooman culture to ask about girls age?"
 
     menu:
@@ -308,8 +313,8 @@ label skiphistory:
     ka "Such a pity, a young hooman like you that just lived for [age] years"
     ka "Need to be erased from the face of the earth ......"
     ka "EHEHEHEHEHEHEHEHEHEHEHEHEHE"
-    ka "EHEHEHEHEHEHEHEHEHEHEHEHEHE\nHEHEHEHEHE"
-    ka "EHEHEHEHEHEHEHEHEHEHEHE\nHEHEHEHEHEEHEHEHEHEH"
+    ka "EHEHEHEHEH\nEHEHEHEHEHEHEHE"
+    ka "EHEHEHEHEHEHEHEHEH\nEHEHEHEH"
     na "Kaneko grabs a box from under the bed and open it, she wears the thing"
     na "it turn out it was a beak mask"
     na "Suddenly Kaneko proppel herself forwad and then stab [pname]\nright into the heart with her beak mask !!!"
@@ -319,6 +324,8 @@ label skiphistory:
     "*Schlp Schlp Schlp Schlp Schlp*"
     pname "AAAAAAAAAAAAAAAAA"
     "*Thud*"
+    "...."
+    "......"
     "Congratulations Now You're Dead"
     "Game Over"
     stop sound
@@ -332,6 +339,8 @@ label end:
     "Meanwhile"
     ka "Kukukukuku Finally i got a new subject!"
     ka "A new slave !! a new citizen my kingdom the Squabbers Kingdom !!!!"
+    "...."
+    "......"
     "Congratulation You, Finished The Game"
     "Thankyou For Playing"
     stop sound
