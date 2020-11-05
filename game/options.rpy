@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("KanekoIntroVn")
+define config.name = _("HatoNoTabibito")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.2c"
+define config.version = "1.2d"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -33,6 +33,7 @@ define gui.about = _p("""
 Thanks to all of this people that contribute on this project :\n
     Ethel Chamomile (Hoodie, Iris Design)\n
     Battle Programmer (Jeans, Shoes Design)\n
+    Airi W (Chibi Art)\n
     Tanz Dev\n
     SaberXG\n
     Yukikaze Ch\n
@@ -52,6 +53,7 @@ Thanks to all of this people that contribute on this project :\n
     Squabbers Member\n
     BlackWings Members\n
     All of my slave :p\n
+Assets :\n
 
 Music :\n
 
@@ -87,8 +89,23 @@ Music: Alec Koff\n
 Video: Creative Commons Attribution License,\n
 Pexels / Licensed Videos, Envato Elements\n
 
-Fesliyan Studios music https://www.fesliyanstudios.com
-Creepy Vibes-39688
+Fesliyan Studios music https://www.fesliyanstudios.com\n
+Creepy Vibes-39688\n
+
+https://freesfx.co.uk/Category/Bells/368\n
+
+https://freesound.org/people/JakLocke/sounds/261090/\n
+
+Background :\n
+https://wall.alphacoders.com/big.php?i=1061708\n
+https://br.pinterest.com/pin/664351382501150868\n
+https://wall.alphacoders.com/big.php?i=1061708\n
+https://wall.alphacoders.com/big.php?i=1061704\n
+https://www.deviantart.com/anasofoz/art/Anime-house-street-view-802347219\n
+https://freesound.org/people/Podcapocalipsis/sounds/521030/\n
+
+
+
 
 Creative Commons ? Attribution 3.0 Unported ? CC BY 3.0 \n
 https://creativecommons.org/licenses/by/3.0/\n
@@ -99,7 +116,7 @@ https://creativecommons.org/licenses/by/3.0/\n
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "KanekoIntroVn"
+define build.name = "HatoNoTabibito"
 
 
 ## Sounds and music ############################################################
