@@ -2,35 +2,41 @@ label scene_3_bad_end:
     scene bg police
     stop music fadeout 1.0
     play music combat
-    ka "Aaaaaaah, W What are you crazy !!!!"
+    ka "Aaaah!"
+    ka "W-What? Are you crazy?"
 
-    na "[ka] Pressing a buglary alarm button under her bed"
+    na "[ka] presses a burglary alarm button under her bed."
 
     play sound siren
     "*Police Siren Sound*"
 
-    "MEGAPHONE : This is a police, We already got you surrounded!!!"
-    "MEGAPHONE : [pname] We got you surrounded"
+    "MEGAPHONE" "This is the FBI, we already have you surrounded!"
+    "MEGAPHONE" "[pname]! We got you surrounded!"
 
-    pname "No No Please [ka]  Chan, Tell Me Your Age !, Please !"
+    pname "No! No please [ka]-chan! Tell me your age! Please!"
+    pname "I beg you!"
 
-    ka "Kyaaaaa ~ Mission Success, Take THE SHOT I Repeat THE SHOT !!!"
+    ka "Kyaaaaa ~!"
+    ka "Mission Success! Take THE SHOT!"
+    ka "I Repeat - TAKE THE SHOT!"
 
-    na "Suddenly Theres a laser in [pname]  forehead"
+    na "Suddenly, theres a laser on [pname]s forehead."
 
-    "*Thump **** Splat Splat ****"
-    "*Thud*"
+    "*Thump!*"
+    "*Splat!*"
+    "*Thud!*"
 
-    na "Then a few seconds later [pname]  were cease to exist"
+    na "Then, a few seconds later, [pname] ceased to exist."
 
-    "*RADIO : Are You okay Agent [ka]!!"
+    "Radio" "Are you okay, agent [ka]?"
 
-    ka "RADIO : Im Okay Director, Please Prepare The Exfil"
+    ka "I'm okay director. Please prepare the Exfil."
 
-    "*RADIO : 10-4 Out , ETA 2 Minutes"
-    "Congratulations Now You're Dead"
+    "Radio" "10-4 Out, ETA 2 Minutes."
+    "Congratulations!"
+    "Now you're dead!"
     "Game Over"
-    
+
     stop music fadeout 1.0
     stop sound
     return

@@ -1,34 +1,38 @@
 label scene_4:
-    ka "Well it doesnt matter anyway im already 20 on hooman age, but when in pigeon age im still 16"
+    ka "Well, it doesn't matter anyway. I'm already 20 in human years, but I'd prefer pidgeon years. Then I'm still 16."
 
-    pname "Oh thats intresting"
+    pname "Oh. Thats interesting."
 
-    ka "I think i will also make some movie time together with my viewers !"
+    ka "I think I will also do some more movie watchalongs."
 
-    pname "And so what is your hobby?"
+    pname "Sounds great!"
+    pname "So, what is your hobby?"
 
-    ka "My hobby? Of Course i like eating , gaming , reading book, travelling around the world and many other things !!"
+    ka "My hobbies? Of Course!"
+    ka "I like eating, gaming, reading books, travelling around the world and many other things!"
 
-    "*Clock is showing 21:00 PM*"
+    "*Clock is showing that it's 21:00 PM*"
 
-    ka "Wow i cant believe time is passing so fast!"
+    ka "Wow! Time sure flies, huh?"
 
-    pname "Ah i think its time for me to go home"
+    pname "I think it's time for me to go home."
 
-    ka "Yeah i agree , take care, before that"
-    ka "Please took this emblem as my gratitude for visiting me here"
+    ka "Yeah, I agree. Take care! But before that..."
+    ka "Please take this emblem as a token of my gratitude!"
+    ka "You know, for visiting me."
 
-    pname "Thakyou so much [ka]"
+    pname "Thak you so much, [ka]."
 
-    ka "A ?!!! Waah You're welcome, you can visit me again anytime!! just tell me beforehand"
+    ka "Ah?!"
+    ka "Waah! You're welcome! You can visit me again anytime! Just tell me beforehand~"
 
-    pname "Okay thanks for everything [ka]"
+    pname "Okay, I will! Thanks for everything, [ka]!"
 
-    na "*[ka] escort [pname] outside her house & close the doors*"
+    na "*[ka] escorts [pname] outside her house & closes the doors*"
 
     "*Peek Peek*"
 
-    ka "Ah finally the hooman is gone, now i can continue with my plan"
-    ka "HeHeHeHeHe"
-    
+    ka "Ah... finally, the human is gone. Now I can continue with my plan."
+    ka "HeHeHeHeHe..."
+
     jump scene_5

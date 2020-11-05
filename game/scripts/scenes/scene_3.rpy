@@ -5,67 +5,76 @@ label scene_3:
     with fade
     show hato standby at center
 
-    na "After A Few Moments .........."
+    na "After a few moments..."
 
-    ka "Thats my story !!"
-    ka "My past is intresting right so\nwhat do you want to know about me?"
-    ka "Wait a moment , let me change my clothes"
+    ka "And that's my story!"
+    ka "My past is interesting, right? So..."
+    ka "What else do you want to know about me?"
+    ka "Wait a moment, let me change my clothes."
 
-    "......."
-    ".........."
+    "..."
 
     show hato cute at left
-    ka "Alright im back !!!"
-    ka "Am i cute ?"
+    ka "Alright! I'm back!"
+    ka "Well?"
+    ka "Is my outfit cute?"
 
     menu:
+        na "At this moment [pname] knows that [pname] absolutely has to answer."
 
-        na "At this moment [pname] knows that [pname] must answer something to increase [ka] impression"
-
-        "Yes, You are very cute !!":
+        "Yes, You are very cute!":
             $cute = True
 
-        "It looks good on you but nothing changed":
+        "It looks good on you, but nothing really changed":
             $cute = False
 
-    ka "Thanks!! , Ill remember that !!!"
+    ka "Thanks! I'll remember this!"
 
-    pname "So.....Tell me, what is your favourite food ?"
+    pname "So..."
+    pname "Tell me, what is your favourite food?"
 
-    ka "My favourite food is rendang & Pizza !!"
-    ka "Rendang Is a meaty food made from beef meat or chicken"
-    ka "You could make it by  yourself or just buy it"
-    ka "Ah i also love pizza !"
-    ka "Oh sorry im getting out from the topics, Tehe ~"
+    ka "My favourite foods are rendang and pizza!"
+    ka "Rendang is a meaty food made from beef or chicken, you know."
+    ka "You could make it at home or just buy it."
+    ka "Ah! I also love pizza!"
+    ka "Oh sorry! I'm getting ahead of myself, tehe ~"
 
-    pname "Oh thats okay, i dont mind it."
-    pname "So how could you became a VTuber?"
+    pname "Thats okay, I dont mind at all."
+    pname "So... how could you became a VTuber?"
 
-    ka "Oh i see okay after i came to this world i transformed into a pigeon that resemble hooman girl"
-    ka "And after i learn hooman culture and learn so advance things with my magic"
-    ka "I became a what that you guys called a programmer, and thats it , because i felt bored"
-    ka "And i need more new friends , new connecion and i be came VTuber ! A Pigeon VTuber\nthat came from another world!!!"
+    ka "Oh! I see!"
+    ka "After I came to this world I was transformed into a pigeon that resembles a human girl."
+    ka "And after I learned so much about human culture with the help of my magic..."
+    ka "I became what you guys would call a programmer. Pretty much just because I was bored."
+    ka "And well, I met more new friends, made new connections and then I became a VTuber!"
+    ka "A Pigeon VTuber that came from another world!"
 
-    pname "Thats cool and such but what is your future goal [ka]? Became a hero ?! Demon slayer ?!"
+    pname "Thats cool and such, but..."
+    pname "What is your future goal, [ka]? Become a hero?! Maybe a demon slayer?!"
 
-    ka "I want my subjecs and citizen to enjoy me more and make everyone happy and befirends everyone !!!"
+    ka "I want my subjects and citizens to enjoy me more!"
+    ka "And also make everyone happy!"
+    ka "Oh! And be friends with everyone!"
 
-    pname "Woah thats a cool goal !!! what about the content?!"
+    pname "Woah! That are some cool goals! What about your content?"
 
-    ka "For now i want to make a inspirative content , educational, gaming content because hooman likes that\nalso maybe music content in the future"
+    ka "For now I want to make inspirational content, maybe some educational stuff..."
+    ka "And gaming for sure! Humans like that..."
+    ka "Also... maybe music content in the future? That'd be cool!"
 
-    pname "Can you tell me how old are you now?"
-    
-    ka "Really isnt it rude in hooman culture to ask about girls age?"
+    pname "Can you tell me how old you are?"
+
+    ka "Really!"
+    ka "Isn't it super rude in human culture to ask about a girls age?"
 
     menu:
-        ka "Do you still want to know how old i'am?"
+        ka "Do you really want to know how old I am?"
         "Yes":
             $askage = True
-            pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,\nWANGI Wangi Wangi WANGI!!HUM WANGI !!"
+            pname "Yes Yes Yes YES [ka]! I Want To Know Your Age!\nHATO HATO HATO HATO,\nWANGI Wangi Wangi WANGI! HUM WANGI!"
             jump scene_3_bad_end
 
         "No":
             $askage = False
-            pname "No, I think im fine"
+            pname "No, I think I'm fine."
             jump scene_4
