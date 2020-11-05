@@ -1,59 +1,5 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define ka = Character("Kaneko Hato", color="#cc33ff")
-define pname = Character("[Anon]", color="#ff5050")
-define na = Character("Narrator", color="#ffffff")
-define age = Character("[age]", color="#ffffff")
-define audio.bgmone = "audio/bgmone.ogg"
-define audio.flaps = "audio/wingsflap.mp3"
-define audio.zapped = "audio/zapped.mp3"
-define audio.story = "audio/storytime.ogg"
-define audio.horror = "audio/horror.ogg"
-#define skiphistory = "None"
-define splash = "images/splash.png"
-define audio.bell = "audio/bells.ogg"
-define audio.doors = "audio/doors.ogg"
-define audio.stabs = "audio/stabs.ogg"
-transform shock_zoom:
-    zoom 5
-    yalign 0
-    xalign 0
-
-
-
-# The game starts here.
-label splashscreen:
-    stop music fadeout 1.0
-    stop sound
-    scene black
-    with Pause(1)
-
-    play sound bell
-
-    show splash with dissolve
-    with Pause(2)
-
-    scene black
-    with Pause(2)
-
-    show text "Squabber Gaming Presents..." with dissolve
-    with Pause(2)
-
-    scene black with dissolve
-    with Pause(1)
-    stop sound
-
-    return
-
-
 
 label start:
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
     stop music fadeout 1.0
     python:
         pname = renpy.input("What Is Your Name?")
@@ -66,17 +12,6 @@ label start:
         age = age.strip()
         if not age:
             age = "21"
-
-        #pnamef = renpy.input("What Is Your First Name?")
-        #pnamef = pnamef.strip()
-        #if not pnamef:
-        #    pnamef = "Ethel"
-
-        #pnamel = renpy.input("What Is Your Last Name?")
-        #pnamel = pnamel.strip()
-        #if not pnamel:
-        #    pnamel = "Chamomile"
-
 
     stop music fadeout 1.0
     scene bg house
