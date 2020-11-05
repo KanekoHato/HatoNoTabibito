@@ -12,9 +12,43 @@ define audio.flaps = "audio/wingsflap.mp3"
 define audio.zapped = "audio/zapped.mp3"
 define audio.story = "audio/storytime.ogg"
 define audio.horror = "audio/horror.ogg"
-define skiphistory = "None"
+#define skiphistory = "None"
+define splash = "images/splash.png"
+define audio.bell = "audio/bells.ogg"
+define audio.doors = "audio/doors.ogg"
+define audio.stabs = "audio/stabs.ogg"
+transform shock_zoom:
+    zoom 5
+    yalign 0
+    xalign 0
+
+
 
 # The game starts here.
+label splashscreen:
+    stop music fadeout 1.0
+    stop sound
+    scene black
+    with Pause(1)
+
+    play sound bell
+
+    show splash with dissolve
+    with Pause(2)
+
+    scene black
+    with Pause(2)
+
+    show text "Squabber Gaming Presents..." with dissolve
+    with Pause(2)
+
+    scene black with dissolve
+    with Pause(1)
+    stop sound
+
+    return
+
+
 
 label start:
     # Show a background. This uses a placeholder by default, but you can
@@ -28,7 +62,7 @@ label start:
         if not pname:
             pname = "Ethel Chamomile"
 
-        age = renpy.input("Please Enter Your Age")
+        age = renpy.input("Please enter Your Age")
         age = age.strip()
         if not age:
             age = "21"
@@ -51,21 +85,55 @@ label start:
     play music bgmone
     show hato standby at left
 
-    ka "[pname] Welcome to my home !!! its tough to get here eh? come, come inside ...."
-    pname "Oh sure sure!, Lets Go Inside !!!!"
-    na "[pname] Getting excited while entering [ka] house"
-    ka "Lets talk in my room"
-    na "[pname] Wants to hug [ka] from behind but [pname] is a shy person so [pname] didnt do it"
-    ".... Such a shame ...."
+    ka "[pname] Welcome to my home !!! its tough to get here eh?"
+    ka "Come, follow me inside..."
+    pname "Oh sure sure!"
+    show hato walkbehind at right
+    "*Trot Trot*"
+    ka "So how's your day ?"
+    pname "Its pretty tiring, anyway thanks for inviting me here"
+    ka "Yeah no problem, right now i'm also free anyway"
+    scene bg livingroom
+    play sound doors
+    "*Doors Open*"
+    "...."
+    "....."
+    show hato handsear at center
+    ka "So welcome to my house [pname]"
+    ka "I hope you enjoy your stay"
+    pname "Yeah, thanks"
+    show hato standby at center
+    ka "Also talking here might be boring so ..."
+    ka "Lets go upstairs and talk in my room"
+    pname "O Ooh, Really? Sure lets go then"
+    scene bg stairs
+    show hato walkbehind at left
+    "*Trot Trot*"
+    ka "Dont worry theres noone here right now anyway"
+    ka "So we could talk about anything intresting !"
+    scene bg roomexterior
+    show hato handsear at right
+    ka "So we have arrived at 2nd floor, lets go inside"
+    play sound doors
+    "*Doors Open*"
+    "...."
+    "....."
+    #na "[pname] Getting excited while entering [ka] house"
+    #na "[pname] Wants to hug [ka] from behind but [pname] is a shy person so [pname] didnt do it"
+    #".... Such a shame ...."
     scene bg bedroom
-    show hato standby
-    ka "Nice nice to meet you [pname]"
-    ka "Before you know more about me how about ..."
-    ka "We talk about my past for a little ?"
+    show hato standby at center
+    ka "Here we are [pname], its pretty messy right?"
+    ka "You could sit anywhere you like !"
+    pname "No, its not messy at all , its pretty tidy"
+    ka "Thank you very much!"
+    ka "Before we talk about me how about you listen to my past story?"
+    pname "So now [ka] gonna told a story about your past ?"
+    ka "Yea, pretty much like that"
     show hato standby at right
     menu:
 
-        ka "Do you want to listen to it?"
+        ka "So do you want to hear my past story?"
 
         "Yes, I Want To Know The Past":
             jump storymode
@@ -90,12 +158,12 @@ label storymode:
     scene bg magicarray
     stop sound
     ka "Wah, what is that maggic array doing over there !!!!"
-    ka "Aaaaaah ~ Im getting sucked by a maggic array !!! "
+    ka "Aaaaaah ~ Im getting sucked by a maggic array !!!"
     na "Magic arrray engulfed all of [ka]  body and her vision getting blurred as she passed out"
     scene bg grassland
     show hato standby at right
     "Chrip Chrip Chrip"
-    ka "Uuuuh w-what had just happened Aaaah my head ........,"
+    ka "Uuuuh w-what had just happened Aaaah my head ....."
     "*looks around*"
     ka "What wait  where the fark i am ?!"
     ka "Am i in the middle of a grassland that who know where the fark it is ?!!!"
@@ -125,7 +193,7 @@ label introduce:
     show hato standby at center
     na "After A Few Moments .........."
     ka "Thats my story !!"
-    ka "My past is intresting right so \n what do you want to know about me?"
+    ka "My past is intresting right so\nwhat do you want to know about me?"
     ka "Wait a moment , let me change my clothes"
     "......."
     ".........."
@@ -146,30 +214,32 @@ label introduce:
     ka "Thanks!! , Ill remember that !!!"
     pname "So.....Tell me, what is your favourite food ?"
     ka "My favourite food is rendang & Pizza !!"
-    ka "Its a meaty food made from beef meat or chicken ~"
-    ka "You should make it by  yourself like Battle Programmer does"
-    ka "Or you can just buy it from your store !!!"
-    ka "Also you could mix rendang with jackfruit condement"
-    ka "So the summary is rendang taste is like a beef meat mixed with"
-    ka "many spices and cooked with the spices untill the spices absorbed by the meat"
-    ka "also i love pizza , but not the one that has pineapple i find it didnt goes well\nwith the meat"
-    pname "How could you became a VTuber?"
+    ka "Rendang Is a meaty food made from beef meat or chicken"
+    ka "You could make it by  yourself or just buy it"
+    #ka "Or you can just buy it from your store !!!"
+    #ka "Also you could mix rendang with jackfruit condement"
+    #ka "So the summary is rendang taste is like a beef meat mixed with"
+    #ka "many spices and cooked with the spices untill the spices absorbed by the meat"
+    ka "Ah i also love pizza !" #", but not the one that has pineapple i find it didnt goes well\nwith the meat"
+    ka "Oh sorry im getting out from the topics, Tehe ~"
+    pname "Oh thats okay, i dont mind it."
+    pname "So how could you became a VTuber?"
     ka "Oh i see okay after i came to this world i transformed into a pigeon that resemble hooman girl"
     ka "And after i learn hooman culture and learn so advance things with my magic"
     ka "I became a what that you guys called a programmer, and thats it , because i felt bored"
-    ka "And i need more new friends , new connecion i be came VTuber A Pigeon VTuber\n that came from another world!!!"
+    ka "And i need more new friends , new connecion and i be came VTuber ! A Pigeon VTuber\nthat came from another world!!!"
     pname "Thats cool and such but what is your future goal [ka]? Became a hero ?! Demon slayer ?!"
     ka "I want my subjecs and citizen to enjoy me more and make everyone happy and befirends everyone !!!"
     pname "Woah thats a cool goal !!! what about the content?!"
     ka "For now i want to make a inspirative content , educational, gaming content because hooman likes that\nalso maybe music content in the future"
-    pname "What is your name?"
+    pname "Can you tell me how old are you now?"
     ka "Really isnt it rude in hooman culture to ask about girls age?"
 
     menu:
-        ka "Do you still want to know about my age  ?"
+        ka "Do you still want to know how old i'am?"
         "Yes":
             $askage = True
-            pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,Wangi Wangi WANGI!!HUM WANGI !!"
+            pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,\nWANGI Wangi Wangi WANGI!!HUM WANGI !!"
             jump police
 
         "No":
@@ -181,6 +251,8 @@ label safe:
     ka "Well it doesnt matter anyway im already 20 on hooman age, but when in pigeon age im still 16"
     pname "Oh thats intresting"
     ka "I think i will also make some movie time together with my viewers !"
+    pname "And so what is your hobby?"
+    ka "My hobby? Of Course i like eating , gaming , reading book, travelling around the world and many other things !!"
     "*Clock is showing 21:00 PM*"
     ka "Wow i cant believe time is passing so fast!"
     pname "Ah i think its time for me to go home"
@@ -229,10 +301,10 @@ label skiphistory:
     stop music fadeout 1.0
     play music horror
     with fade
-    show hato standby at right
-    ka "So sad..... so you didnt want to know or hear about my past? [pname]"
+    show hato standby at center
+    ka "So sad..... so you didnt want to know or hear about my past?\n[pname]"
     ka "First thing first let me hear about you first okay?"
-    pname "What do you want to know?"
+    pname "W What do you want to know?"
     ka "Tell me what is your age?"
     pname "My age is [age] now, i felt old already."
     ka "Ah intresting so you already lived for [age] years?"
@@ -241,14 +313,19 @@ label skiphistory:
     ka "Such a pity, a young hooman like you that just lived for [age] years"
     ka "Need to be erased from the face of the earth ......"
     ka "EHEHEHEHEHEHEHEHEHEHEHEHEHE"
-    ka "EHEHEHEHEHEHEHEHEHEHEHEHEHE\nHEHEHEHEHE"
-    ka "EHEHEHEHEHEHEHEHEHEHEHE\nHEHEHEHEHEEHEHEHEHEH"
+    ka "EHEHEHEHEH\nEHEHEHEHEHEHEHE"
+    ka "EHEHEHEHEHEHEHEHEH\nEHEHEHEH"
     na "Kaneko grabs a box from under the bed and open it, she wears the thing"
     na "it turn out it was a beak mask"
-    na "Suddenly Kaneko proppel herself forwad and then stab [pname] right into the heart with her beak mask !!!"
-    "*Schlp Crot*"
+    na "Suddenly Kaneko proppel herself forwad and then stab [pname]\nright into the heart with her beak mask !!!"
+    play sound stabs
+    "*Schlp Schlp Schlp*"
+    "*Schlp Schlp Schlp Schlp*"
+    "*Schlp Schlp Schlp Schlp Schlp*"
     pname "AAAAAAAAAAAAAAAAA"
     "*Thud*"
+    "...."
+    "......"
     "Congratulations Now You're Dead"
     "Game Over"
     stop sound
@@ -261,21 +338,11 @@ label end:
     na "Finally after they know each other [pname] go back to its own house"
     "Meanwhile"
     ka "Kukukukuku Finally i got a new subject!"
-    ka "A new slave !! a new citizen my kingdom the Pigeoniest Kingdom !!!!"
+    ka "A new slave !! a new citizen my kingdom the Squabbers Kingdom !!!!"
+    "...."
+    "......"
     "Congratulation You, Finished The Game"
     "Thankyou For Playing"
     stop sound
     stop music fadeout 1.0
-    return
-
-
-
-
-
-
-
-
-
-
-
     return
