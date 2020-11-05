@@ -9,7 +9,7 @@ label splashscreen:
     show splash with dissolve
     with Pause(2)
 
-    scene black
+    scene black with dissolve
     with Pause(2)
 
     show text "Squabber Gaming Presents..." with dissolve
@@ -17,6 +17,9 @@ label splashscreen:
 
     scene black with dissolve
     with Pause(1)
+
+    scene menu_animation_help at half_size with dissolve
     stop sound
+
 
     return
