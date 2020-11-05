@@ -232,11 +232,11 @@ label introduce:
     ka "I want my subjecs and citizen to enjoy me more and make everyone happy and befirends everyone !!!"
     pname "Woah thats a cool goal !!! what about the content?!"
     ka "For now i want to make a inspirative content , educational, gaming content because hooman likes that\nalso maybe music content in the future"
-    pname "What is your age?"
+    pname "Can you tell me how old are you now?"
     ka "Really isnt it rude in hooman culture to ask about girls age?"
 
     menu:
-        ka "Do you still want to know about my age  ?"
+        ka "Do you still want to know how old i'am?"
         "Yes":
             $askage = True
             pname "Yes Yes Yes YES [ka] !!! I Want To Know Your Age !!!\nHATO HATO HATO HATO,\nWANGI Wangi Wangi WANGI!!HUM WANGI !!"
